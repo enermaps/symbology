@@ -1,0 +1,142 @@
+{
+  "id": "84fb683e-f3ea-4136-b0bd-76a968d26d72",
+  "name": "enermaps_symbology",
+  "title": "Enermaps symbology",
+  "profile": "tabular-data-package",
+  "description": "Enermaps symbology for the layers available on the platform.",
+  "version": "0.1",
+  "created": "2021-11-24",
+  "keywords": [
+    "enermaps",
+    "symbology"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Valentina D'Alonzo",
+      "email": "valentina.dalonzo@eurac.edu",
+      "role": "author",
+      "organization": "Eurac Research"
+    },
+    {
+      "title": "Samuele Zilio",
+      "email": "samuele.zilio@eurac.edu",
+      "role": "author",
+      "organization": "Eurac Research"
+    },
+    {
+      "title": "Amy Segata",
+      "email": "amy.segata@eurac.edu",
+      "role": "author",
+      "organization": "Eurac Research"
+    }
+  ],
+  "resources": [
+    {
+      "path": "data/layers.csv",
+      "profile": "tabular-data-resource",
+      "name": "layers",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "ds_id",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Dataset title",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "variable",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "israster",
+            "type": "boolean",
+            "format": "default"
+          },
+          {
+            "name": "unit_mod",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "type_of_data",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "class_of_data",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+        {
+      "path": "data/color-tables.csv",
+      "profile": "tabular-data-resource",
+      "name": "color-tables",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "class_of_data",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "RGB code (1)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "RGB code (2)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "RGB code (3)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "RGB code (4)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "RGB code (5)",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
