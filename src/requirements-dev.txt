@@ -1,0 +1,5 @@
+pre-commit
+bandit
+isort
+black
+flake8
